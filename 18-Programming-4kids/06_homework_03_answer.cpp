@@ -2,20 +2,14 @@
 using namespace std;
 
 int main() {
+int num;
+cin >> num;
+int n1 = num % 10;
+int n2 = ((num % 100) - n1 ) / 10;
+int n3 = ((num % 1000) - (n1+n2)) / 100;
+cout << n1 + n2 + n3;
 
-	int n;
-	cin >> n;
-
-	int last1 = n % 10;
-	n /= 10;
-
-	int last2 = n % 10;
-	n /= 10;
-
-	int last3 = n % 10;
-	n /= 10;
-
-	cout << last1 + last2 + last3 << "\n";
+	
 
 	return 0;
 }
