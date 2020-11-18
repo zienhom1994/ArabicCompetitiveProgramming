@@ -2,13 +2,9 @@
 using namespace std;
 
 int main() {
-
-	int n;
-	cin >> n;
-
-	// /1000 => removes last 3 digits
-	// %10 get next digit = 4th
-	cout << (n / 1000) % 10 << "\n";
+int n;
+cin >> n;
+cout << (n % 10000) / 1000;
 
 	return 0;
 }
